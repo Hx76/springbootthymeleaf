@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+<span th:text="哈哈哈"></span>
+<hr/>
+<span th:text="${msg}"></span>
+<hr/>
+<span th:value="${msg}"></span>
+<input th:value="${msg}">
+<hr/>
+<span th:text="${#strings.isEmpty(msg)}"></span>
+<span th:text="${#strings.contains(msg,'h')}"></span>
+<span th:text="${#dates.format(date,'yyy/mm/dd')}"></span>
+
+</body>
+</html>
